@@ -4,8 +4,7 @@ import CategoryList from './CategoryList.vue'
 
 export default {
   components: { CategorySubmitter, CategoryList },
-  emits: ['submitted'],
-  // props: ['categories'],
+
   data() {
     return {
       categories: [
@@ -30,17 +29,20 @@ export default {
 </template> -->
 
 <template>
-  <div class="tree">
-    <div class="category">
-      <CategoryList
-        v-bind:categories="categories"
-        v-on:categories-edited="categories = $event"
-        v-on:categories-removed="categories = $event"
-      />
-      <CategorySubmitter
-        v-bind:categories="categories"
-        v-on:category-submitted="$emit('submitted', $event)"
-      />
+  <div class="container">
+    <h1>Categories</h1>
+    <div class="tree categories">
+      <div class="category">
+        <CategoryList
+          v-bind:categories="categories"
+          v-on:categories-edited="categories = $event"
+          v-on:categories-removed="categories = $event"
+        />
+        <CategorySubmitter
+          v-bind:categories="categories"
+          v-on:category-submitted="$emit('submitted', $event)"
+        />
+      </div>
     </div>
   </div>
 </template>
