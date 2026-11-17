@@ -5,7 +5,7 @@ createApp(App).mount('#app')
 
 // названия сущностей:
 // Category
-// Thing
+// Stuff
 
 // виды компонентов:
 // List - Array - []
@@ -13,6 +13,8 @@ createApp(App).mount('#app')
 
 // CategoryList []
 // CategoryItem {}
+// CategorySubmitter () => {}
 
-// ThingList []
-// ThingItem {}
+// StuffList []
+// StuffItem {}
+// StuffSubmitter () => {}

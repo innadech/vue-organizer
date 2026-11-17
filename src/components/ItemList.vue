@@ -1,5 +1,5 @@
 <script>
-import ItemItem from './ItemItem.vue'
+import ItemItem from './stuff/StuffItem.vue'
 
 export default {
   components: { ItemItem },

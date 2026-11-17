@@ -1,5 +1,5 @@
 <script>
-import CategoryItem from './CategoryItem.vue'
+import CategoryItem from './category/CategoryItem.vue'
 
 export default {
   components: { CategoryItem },
